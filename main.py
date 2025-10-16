@@ -1,6 +1,8 @@
 import docx
+from styls import Styles
 
-path = 'C:/Users/vovat/Desktop/АКМС/Практика 7.docx' # path to word file
+path = 'C:/Users/vovat/Desktop/АКМС/Тест1.docx' # path to word file
 doc = docx.Document(path)
-doc.styles['Heading 1'].paragraph_format
-print(type(doc))
+styles = Styles(doc)
+styles.run()
+doc.save(path)
