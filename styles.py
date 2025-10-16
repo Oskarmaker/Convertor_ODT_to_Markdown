@@ -117,16 +117,16 @@ class Styles:
         except:
             pass
         self.chenging_style('Текст таблицы', 'Times New Roman', 12, (0, 0, 0), False,
-                            True, False, False, 'center', 0,
+                            False, False, False, 'center', 0,
                             0, 0, 0, 1, 0,
                             False, False, True)
 
     def image(self):
         try:
-            self.doc.styles.add_style('Изображение', WD_STYLE_TYPE.PARAGRAPH)
+            self.doc.styles.add_style('Рисунок', WD_STYLE_TYPE.PARAGRAPH)
         except:
             pass
-        self.chenging_style('Изображение', 'Times New Roman', 12, (0, 0, 0), False,
+        self.chenging_style('Рисунок', 'Times New Roman', 12, (0, 0, 0), False,
                             False, False, False, 'center', 0, 0,
                             0, 0, 1, 0, True,
                             False, True)
